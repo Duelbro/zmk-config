@@ -15,10 +15,10 @@
 
         base_layer {
             bindings = <
-  &kp W   &kp L   &kp R   &kp B      &kp Y         &kp SEMI   &kp Q   &kp U   &kp D   &kp J
-  &kp S   &kp H   &kp N   &kp T  &kp COMMA          &kp DOT   &kp A   &kp E   &kp O   &kp I
-  &kp F   &kp M   &kp V   &kp C  &kp SLASH            &kp G   &kp P   &kp X   &kp K   &kp Z
-                          &to 2  &kp SPACE  &sk RIGHT_SHIFT   &to 1
+     &kp W       &kp L        &kp R        &kp B            &kp Y  &kp SINGLE_QUOTE        &kp Q        &kp U       &kp D       &kp J
+     &kp S       &kp H        &kp N        &kp T        &kp COMMA           &kp DOT        &kp A        &kp E       &kp O       &kp I
+&mt LGUI F  &mt LALT M  &mt LCTRL V  &mt LSHFT C  &mt LCTRL SLASH             &kp G  &mt RSHFT P  &mt RCTRL X  &mt RALT K  &mt RGUI Z
+                                       &kp SPACE        &lt 2 TAB           &kp RET   &lt 1 BSPC
             >;
 
             /*bindings = <
@@ -29,39 +29,21 @@
 			>;*/
         };
 
-        Sym {
+        NumSymNav {
             bindings = <
-    &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0
- &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN     &kp EQUAL           &kp           &kp     &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION
-             &kp            &kp               &kp           &kp           &kp           &kp           &kp                   &kp                    &kp           &kp
-                                                         &trans        &trans         &to 0        &trans
+&kp LEFT_BRACKET       &kp NUMBER_5        &kp NUMBER_6        &kp NUMBER_7  &kp RIGHT_BRACKET  &kp PG_UP   &kp LEFT_ARROW    &kp UP_ARROW       &kp END  &kp PRINTSCREEN
+        &kp SEMI       &kp NUMBER_9        &kp NUMBER_0        &kp NUMBER_1          &kp EQUAL  &kp PG_DN  &kp RIGHT_ARROW  &kp DOWN_ARROW      &kp HOME          &kp INS
+  &mt LGUI GRAVE  &mt LALT NUMBER_2  &mt LCTRL NUMBER_3  &mt LSHFT NUMBER_4      &kp BACKSLASH   &kp CAPS        &kp RSHFT   &mt RCTRL ESC  &mt RALT ESC    &kp RIGHT_GUI
+                                                                  &kp MINUS       &kp NUMBER_8      &none           &trans
             >;
         };
 
-        Num_Nav {
+        Fun {
             bindings = <
- &trans  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7        &trans  &trans   &kp LEFT  &kp UP_ARROW  &trans  &trans
- &trans  &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4        &trans  &trans  &kp RIGHT      &kp DOWN  &trans  &trans
- &trans  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1        &trans  &trans   &kp HOME       &kp END  &trans  &trans
-                                           &tog 3  &kp NUMBER_0   &to 0     &tog 4
-            >;
-        };
-
-        Shortcuts {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &tog 3  &trans   &to 0  &trans
-            >;
-        };
-
-        Layer__4 {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans   &to 0  &tog 4
+   &none       &kp F7        &kp F8        &kp F9  &kp F12  &none   &kp LEFT  &kp UP_ARROW   &kp END     &none
+ &kp ESC       &kp F4        &kp F5        &kp F6  &kp F11  &none  &kp RIGHT      &kp DOWN  &kp HOME     &none
+&kp LGUI  &mt LALT F1  &mt LCTRL F2  &mt LSHFT F3  &kp F10  &none  &kp RSHFT     &kp RCTRL  &kp RALT  &kp RGUI
+                                            &none   &trans  &none      &none
             >;
         };
     };
